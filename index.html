@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Roblox – Світ Ігор</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    header {
+      background-color: #e30613;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e30613;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background-color: #e30613;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #ff475a;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .video {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .video iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Roblox – Створи та Грай!</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Про гру</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#video">Відео</a>
+    <a href="#play">Почати</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about" class="hero">
+      <h2>Що таке Roblox?</h2>
+      <p>
+        Roblox — це унікальна онлайн-платформа, де мільйони користувачів створюють та грають в ігри, зроблені іншими. Це не просто гра — це цілий всесвіт, який ти можеш досліджувати, будувати і розвивати!
+      </p>
+      <div class="buttons">
+        <button onclick="playGame()">Грати зараз</button>
+        <button onclick="moreInfo()">Дізнатися більше</button>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Галерея Roblox</h2>
+      <div class="gallery">
+        <img src="https://i.imgur.com/NNWBlcR.jpeg" alt="Roblox 1">
+        <img src="https://i.imgur.com/1Pbn0Gp.jpeg" alt="Roblox 2">
+        <img src="https://i.imgur.com/j0kHG0K.jpeg" alt="Roblox 3">
+        <img src="https://i.imgur.com/Tp9IJ3T.jpeg" alt="Roblox 4">
+      </div>
+    </section>
+
+     <section id="video" class="video">
+      <h2>🎬 РОБЛОКС</h2>
+      <iframe src="https://www.youtube.com/embed/bzXzGMbdQfY?si=5hQLtc11E3S6pQ79" allowfullscreen></iframe>
+    </section>
+
+    <section id="play" class="hero">
+      <h2>Почни гру прямо зараз!</h2>
+      <p>Готовий стати розробником або дослідником тисяч світів?</p>
+      <div class="buttons">
+        <button onclick="playGame()">🔽 Завантажити Roblox</button>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Roblox Fan Site. Неофіційний сайт, створений для фанів 🎮</p>
+  </footer>
+
+  <script>
+    function playGame() {
+      alert("Ви будете перенаправлені на офіційний сайт Roblox.");
+
+      window.location.href = "https://www.roblox.com/";
+    }
+
+    function moreInfo() {
+      alert("Roblox — безмежна платформа для створення та дослідження ігор.");
+    }
+  </script>
+
+</body>
+</html>
